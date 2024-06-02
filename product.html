@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Products</title>
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+  <header>
+    <h1>Products</h1>
+  </header>
+  <div class="container">
+    <div class="form">
+      <h2>Add Product</h2>
+      <label>
+        Product ID:*
+        <input type="number" id="id" placeholder="Product ID" required>
+      </label><br>
+      <label>
+        Product Name:*
+        <input type="text" id="name" placeholder="Product Name" required>
+      </label><br>
+      <label>
+        Product Description:*
+        <input type="text" id="description" placeholder="Product Description" required>
+      </label><br>
+      <label>
+        Product Cost:*
+        <input type="number" id="price" placeholder="Product Price" required>
+      </label><br>
+      
+      <label>
+        Product Category:*
+        <input type="text" id="category" placeholder="Product Category" required>
+      </label><br>
+      <label>
+        Product Manufacturer:*
+        <input type="text" id="manufacturer" placeholder="Product Manufacturer" required>
+      </label><br>
+      
+      <label>
+        Product Stock Quantity:*
+        <input type="number" id="stockquantity" placeholder="Stock Quantity" required>
+      </label><br>
+      
+      
+      <label>
+        Product Release Date:*
+        <input type="date" id="releasedate" placeholder="Product Release Date" required>
+      </label><br>
+
+      <label>
+        Product Rating:*
+        <input type="number" id="rating" placeholder="Product rating out of 5" min="0" max="5" required>
+      </label><br>
+      <button onclick="addProduct()">Add Product</button>
+    </div>
+    <div class="products">
+      <h2>Product Details</h2>
+      <ul id="productli"></ul>
+    </div>
+  </div>
+  <script src="product.js"></script>
+</body>
+</html>
